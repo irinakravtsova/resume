@@ -7,44 +7,92 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;1,9..40,500&family=Montserrat:wght@600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./CSS/style _prog.css">
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="index.css">
 </head>
+
 <body>
   <header class="header">
     <div class="container">
       <div class="header__mask">
         <div class="header__mask-text">
-          <h1 class="header__text-h1" >Привет друзья ! Меня зовут Ирина <span>я frontend-разработчик</span></h1>
-          <p class="header__mask-p">А еще я умею разное</p>
-          <div class="header__mask-botton">
-            <p class="header__botton-p">Узнать больше</p>
+          <img class="header__mask-logo" src="logo16.1.png" alt="">
+          <h2 class="header__h2" >Привет, я Ирина  <span>— фронтенд разрaботчик</span></h2>
+          <h1 class="header__h1">Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые повышают престиж компании и позволяют выделиться на фоне конкурентов</h1>
+          <div class="header__mask-button">
+            <p class="header__button-p">Узнать больше</p>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="10" viewBox="0 0 24 10" fill="none">
               <path d="M23.4596 5.45962C23.7135 5.20578 23.7135 4.79422 23.4596 4.54038L19.323 0.403808C19.0692 0.149967 18.6576 0.149967 18.4038 0.403808C18.15 0.657648 18.15 1.06921 18.4038 1.32305L22.0808 5L18.4038 8.67696C18.15 8.9308 18.15 9.34235 18.4038 9.5962C18.6576 9.85004 19.0692 9.85004 19.323 9.5962L23.4596 5.45962ZM-5.68248e-08 5.65L23 5.65L23 4.35L5.68248e-08 4.35L-5.68248e-08 5.65Z" fill="black"/>
-              </svg>
-            
+              </svg>            
           </div>
         </div>
         <div class="header__mask-img">
-          <img class="header-img-fone" src="./imgs/img_prog/header.png" alt="fone">
-          <div class="header__mask-img-foto">
-            <img class="header-img-foto" src="./imgs/img_prog/фото_1_1.gif" alt="foto">
-          </div>
-          
-          
-          
-          <div class="header__mask-img-fone">
-          
-            
-          </div>
-          
-        
+          <img class="header__mask-img-fone" src="fone.png" alt="fone">
+          <img class="header__mask-img-foto" src="foto.png" alt="foto">
         </div>
-        
-
       </div>
     </div>
-
   </header>
+  <main>
+    <div class="container">
+      <section class="project">
+        <h2 class="main-h2">
+          Самые свежие проекты
+        </h2>
+        <ul class="project__ul">
+          <li class="project__li">
+            <div class="project__item item1"> 
+              <h3>Метрика</h3> 
+              <p>верстка</p>            
+            </div>
+            
+          </li>
+          <li class="project__li"> 
+            <div class="project__item item2">
+              <h3 class="project__item-h3">Tesla</h3> 
+              <p class="project__item-p">верстка</p>
+            </div>         
+          </li>
+          <li class="project__li">
+            <div class="project__item item3"> 
+              <h3 class="project__item-h3">Find your peace</h3> 
+              <p class="project__item-p">верстка</p>                 
+            </div>
+          </li>
+        </ul>
+        <a href="">Смотреть все проекты</a>
+      </section>
+      <section class="competencies">
+        
+        <ul>
+          <li>
+            <img src="" alt="Icon HTML">
+            <h3>HTML и CSS</h3>
+           <p>это основа фронтенд разработки. Умение создавать и правильно структурировать HTML-документы, а также применять стили к этим документам на CSS, является обязательным навыком для каждого фронтенд разработчика.</p>
+          </li>
+          <li>
+            <img src="" alt="Icon JS">
+            <h3>JavaScript</h3>
+            <p>это язык программирования, который используется для создания динамического и интерактивного пользовательского интерфейса. Хороший фронтенд разработчик должен быть знаком с основами JavaScript, включая работу с DOM-деревом, асинхронными запросами и манипуляцией данными на стороне клиента.</p>
+          </li>
+          <li>
+            <img src="" alt="Icon React">
+            <h3>Работа с библиотеками и фреймворками</h3>
+            <p>фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.</p>
+          </li>
+          <li>
+            <img src="" alt="Icon mobail">
+            <h3> Разработка для мобильных устройств и адаптивная верстка</h3>
+            <p>фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.</p>
+          </li>
+        </ul>
+
+        <a href="">Смотреть все проекты</a>
+      </section>
+    </div>
+  </main>
   <button>Нажми меня</button>
 
   <div class="output"></div>

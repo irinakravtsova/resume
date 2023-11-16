@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+li {
+  list-style: none;
+
+}
+ul {
+
+}
 
 /* font-family: 'DM Sans', sans-serif;
 font-family: 'Montserrat', sans-serif; */
@@ -12,67 +19,139 @@ font-family: 'Montserrat', sans-serif; */
   margin: 0 auto; 
 }
 .header__mask {
-  background-color: #1D4ED8;
   display: flex;
   height: 885px;
-}
-.header__mask-img {
-  display: flex;
-}  
-.header__mask-img-foto {
-  position: absolute;
+  background-color: #1D4ED8;
 }
 .header__mask-text {
-  margin-top: 200px;
-  margin-left: 150px;
+  margin-top: 43px;
+  margin-left: 105px;
 }
-.header__text-h1 {
-  color: #FFF;
+.header__mask-logo {
+  padding-bottom: 70px;
+}
+.header__h2 {
+  margin-bottom: 24px; 
 font-family: Montserrat;
 font-size: 56px;
 font-style: normal;
 font-weight: 600;
 line-height: 72px; /* 128.571% */
 letter-spacing: 0.3px;
-margin-bottom: 24px;
+color: #FFF;
 }
-.header__text-h1 span {
+.header__h2 span {
   color: #FDE047;
 }
-.header__mask-p {
-  color: #FFF;
+.header__h1 {
+margin-bottom: 50px;
 font-family: Montserrat;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 24px; /* 150% */
 letter-spacing: 0.64px;
-margin-bottom: 26px;
+color: #FFF;
 }
-.header__mask-botton {
+.header__mask-button {
   width: 194px;
   height: 60px;
- background: #FDE047;
+ background: #fcdf4a;
  display: flex;
 }
-.header__botton-p {
-  color: #000;
+.header__button-p {
+  margin-top: 18px;
+  margin-left: 18px;
 font-family: Montserrat;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 24px; /* 150% */
 letter-spacing: 0.3px;
-margin-top: 18px;
-margin-left: 18px;
+color: #000;
 }
 svg {
  margin: auto;
 }
-.header-img-foto {
-  height: 1000px;
-}
+.header__mask-img {
+  display: flex;
+  position: relative;
+} 
 .header-img-fon {
   width: 728px;
   height: 685px;
+  padding-left: 16px;
+}
+.header__mask-img-foto {
+  position: absolute;
+  left: 224px;
+  top: 35px;
+  height: 500px;
+}
+.project {
+  padding-top: 150px;
+  padding-left: 120px;
+  background-color: #051339;
+}
+.main-h2 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.65px;
+  color: #FDE047;
+}
+.project__ul {
+  padding-top: 40px;
+ }
+.project__item {
+  position: relative;
+  height: 550px;
+  width: 1150px;
+ background-repeat: no-repeat;
+  border: 1px solid #051339;
+  border-radius: 30px;
+}
+.item1 {
+  background-image: url(metric.jpg);
+}
+.item2 {
+  background-image: url(tesla.jpg);
+}
+.item3 {
+  background-image: url(find\ your\ peace.jpg);
+}
+h3 {
+  position: absolute;
+  left: 60px;
+  bottom: 63px;
+  color: #FFF;
+
+font-family: IBM Plex Mono;
+font-size: 35px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -1.05px;
+
+}
+.project__item-h3 {
+  color: #000;
+}
+p {
+  position: absolute;
+  left: 60px;
+  bottom: 14px;
+  color: #FFF;
+
+font-family: IBM Plex Mono;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.9px;
+}
+.project__item-p {
+  color: #000;
 }
