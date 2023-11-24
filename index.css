@@ -8,31 +8,72 @@ li {
 
 }
 ul {
-
+  list-style: none;
 }
+body {
+  background-color: #051339;
+   font-family: 'IBM Plex Mono', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+}
+
 
 /* font-family: 'DM Sans', sans-serif;
 font-family: 'Montserrat', sans-serif; */
 
 .container {
-  max-width: 1440px;
+  max-width: 1150px;
   margin: 0 auto; 
 }
+.header {
+   
+}
+.section__nav {
+  display: flex;   
+  padding-top: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+}
+.logo-link {
+  padding-top: 10px;
+
+}
+.logo {
+  width: 100px;
+}
+.header__menu {
+  display: inline-block;
+  padding-left: 502px;
+  vertical-align: top;
+  padding-top: 25px;
+  
+}
+.header__menu-link {
+  margin-right: 50px;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: -0.54px;
+  text-decoration: none;
+  color: #FDE047;
+}
+.header__menu-link:nth-last-child(1) {
+  margin-right: 0;
+}
+.header__menu-link:hover {
+  opacity: 0.5;
+  border-bottom: 1px solid #FDE047;
+}
+  
 .header__mask {
   display: flex;
-  height: 885px;
-  background-color: #1D4ED8;
 }
 .header__mask-text {
-  margin-top: 43px;
-  margin-left: 105px;
-}
-.header__mask-logo {
-  padding-bottom: 70px;
+  margin-top: 72px;
 }
 .header__h2 {
-  margin-bottom: 24px; 
-font-family: Montserrat;
+margin-bottom: 24px; 
+font-family: Montserrat; 
 font-size: 56px;
 font-style: normal;
 font-weight: 600;
@@ -64,17 +105,15 @@ color: #FFF;
   margin-left: 18px;
 font-family: Montserrat;
 font-size: 16px;
-font-style: normal;
-font-weight: 400;
 line-height: 24px; /* 150% */
 letter-spacing: 0.3px;
 color: #000;
+text-decoration: none;
 }
 svg {
  margin: auto;
 }
 .header__mask-img {
-  display: flex;
   position: relative;
 } 
 .header-img-fon {
@@ -84,14 +123,20 @@ svg {
 }
 .header__mask-img-foto {
   position: absolute;
-  left: 224px;
-  top: 35px;
-  height: 500px;
+ left: 270px;  
+  top: 0px;
+  height: 900px;   
+   /* opacity: 0.7; */
+}
+.header__mask-img-foto1 {
+  position: absolute;
+ left: 120px;  
+  top: 0px;
+  height: 900px;   
 }
 .project {
   padding-top: 150px;
-  padding-left: 120px;
-  background-color: #051339;
+  
 }
 .main-h2 {
   font-family: 'IBM Plex Mono', monospace;
@@ -102,16 +147,22 @@ svg {
   letter-spacing: -1.65px;
   color: #FDE047;
 }
-.project__ul {
+.project__wrapper {
   padding-top: 40px;
  }
-.project__item {
+ .project__li {
+  padding-bottom: 48px;
+ }
+.project__items {
   position: relative;
   height: 550px;
   width: 1150px;
+  /* margin-bottom: 35px; */
  background-repeat: no-repeat;
-  border: 1px solid #051339;
+  border: 15px solid #051339;
   border-radius: 30px;
+  border-color: #000;
+  opacity: 0.8;
 }
 .item1 {
   background-image: url(metric.jpg);
@@ -122,36 +173,76 @@ svg {
 .item3 {
   background-image: url(find\ your\ peace.jpg);
 }
-h3 {
+.project__item {
   position: absolute;
-  left: 60px;
-  bottom: 63px;
-  color: #FFF;
+  top: -10px;
+  left: 115px;
+}
+.Find_your {
+  left: 252px;
+}
+/* .project__item-text {
+  position: absolute;
+  top: -10px;
+  left: 115px;
+} */
+/* .project__item-text3 {
+  position: absolute;
+  top: -10px;
+  left: 252px;
+  
+} */
+.project__item-title {
+  position: absolute;
 
-font-family: IBM Plex Mono;
-font-size: 35px;
+top: 10px;
+padding-left: 25px;
+padding-top: 16px;
+
+  color: #051339;
+  font-family: 'Pattaya', sans-serif;
+font-size: 24px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
 letter-spacing: -1.05px;
+}
+.tesla {
 
 }
-.project__item-h3 {
-  color: #000;
-}
-p {
+.project__item-p {
   position: absolute;
-  left: 60px;
-  bottom: 14px;
-  color: #FFF;
+  top: 55px;
+  padding-left: 30px;
+  padding-top: 9px;
+  
+  font-family: 'Pattaya', sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.9px;
+color: #051339;
+}
+.title3 {
+  font-size: 18px;
+}
+.project__btn {
+  margin-top: 80px;
 
+  width: 582px;
+height: 153px;
+/* flex-shrink: 0; */
+border-radius: 10px;
+background: #FDE047;
+color: #000;
+
+text-align: center;
 font-family: IBM Plex Mono;
 font-size: 30px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
 letter-spacing: -0.9px;
-}
-.project__item-p {
-  color: #000;
+text-decoration: none;
 }
