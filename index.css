@@ -31,13 +31,23 @@ font-family: 'Montserrat', sans-serif; */
 }
 .logo-link {
   padding-top: 10px;
+  padding-right: 7px;
 }
 .logo {
   width: 100px;
 }
+.logo__title {
+  margin-bottom: 50px;
+ padding-top: 15px;
+  font-family: Montserrat;
+  font-size: 14px;
+   line-height: 18px; /* 150% */
+  letter-spacing: 0.64px;
+  color: #fde047;
+}
 .header__menu {
   display: inline-block;
-  padding-left: 502px;
+  padding-left: 396px;
   vertical-align: top;
   padding-top: 25px;
 }
