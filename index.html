@@ -14,7 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
   </head>
 
@@ -35,17 +38,18 @@
           </section>
           <div class="header__mask">
             <div class="header__mask-text">
-              <h2 class="header__h2">
-                Привет, я Ирина <span>— фронтенд разрaботчик и немного дизайнер</span>
+              <h2 class="header__text">
+                Привет, я Ирина
+                <span>— фронтенд разрaботчик и немного дизайнер</span>
               </h2>
-              <h1 class="header__h1">
+              <h1 class="header__title">
                 Разрабатываю имиджевые сайты для малого и среднего бизнеса,
                 которые повышают престиж компании и позволяют выделиться на фоне
                 конкурентов
               </h1>
               <div class="header__mask-button">
                 <a class="header__button-p" href="/">Узнать больше</a>
-               
+
                 <!-- <p class="header__button-p">Узнать больше</p> -->
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -64,60 +68,79 @@
             <div class="header__mask-img">
               <img class="header__mask-img-fone" src="fone1.png" alt="fone" />
               <img class="header__mask-img-foto" src="фото_23.png" alt="foto" />
-              
             </div>
           </div>
         </div>
-       
       </div>
     </header>
     <main>
       <div class="container">
         <section class="project">
-          <h2 class="main-h2">Самые свежие проекты</h2>
+          <h2 class="main-title">Самые свежие проекты</h2>
           <ul class="project__wrapper">
             <li class="project__items item1">
-              <div class="project__item ">
-                <img class="project__item-text" src="стикер3.png" alt="">
+              <div class="project__item">
+                <img class="project__item-text" src="стикер3.png" alt="" />
                 <h3 class="project__item-title">Метрика</h3>
-                <p class="project__item-p">разработка <br> интерфейса</p>
+                <p class="project__item-p">
+                  разработка <br />
+                  интерфейса
+                </p>
               </div>
             </li>
             <li class="project__items item2">
-              <div class="project__item ">
-                <img class="project__item-text" src="стикер3.png" alt="">
+              <div class="project__item">
+                <img class="project__item-text" src="стикер3.png" alt="" />
                 <h3 class="project__item-title">Tesla</h3>
-                <p class="project__item-p ">разработка <br> интерфейса</p>
+                <p class="project__item-p">
+                  разработка <br />
+                  интерфейса
+                </p>
               </div>
             </li>
             <li class="project__items item3">
               <div class="project__item Find_your">
-                <img class="project__item-text" src="стикер3.png" alt="">
-                <h3 class="project__item-title ">Find your peace</h3>
-                <p class="project__item-p ">разработка <br> интерфейса</p>
+                <a class="project__item Find_your-link" href="https://irinakravtsova.github.io/Find-your-peace/">
+                  <img class="project__item-text" src="стикер3.png" alt="" />
+                  <h3 class="project__item-title">Find your peace</h3>
+                  <p class="project__item-p">
+                    разработка <br />
+                    интерфейса
+                  </p>
+                </a>
+               
               </div>
             </li>
           </ul>
           <div class="project__btn">
-            <a href="/">Смотреть все проекты</a>
+            <a class="project__btn-text" href="/">Смотреть все проекты</a>
           </div>
         </section>
         <section class="competencies">
-          <ul>
-            <li>
-              <img src="" alt="Icon HTML" />
-              <h3>HTML и CSS</h3>
-              <p>
+          <h2 class="main-title">Мои компетенции</h2>
+          <ul class="competencies__wrapper">
+            <li class="competencies__item">
+              <img
+                class="competencies__icon"
+                src="icon_html_yello.png"
+                alt="Icon HTML"
+              />
+              <h3 class="competencies__item-title">HTML и CSS</h3>
+              <p class="competencies__item-text">
                 это основа фронтенд разработки. Умение создавать и правильно
                 структурировать HTML-документы, а также применять стили к этим
                 документам на CSS, является обязательным навыком для каждого
                 фронтенд разработчика.
               </p>
             </li>
-            <li>
-              <img src="" alt="Icon JS" />
-              <h3>JavaScript</h3>
-              <p>
+            <li class="competencies__item">
+              <img
+                class="competencies__icon"
+                src="icon_JS_yello.png"
+                alt="Icon JS"
+              />
+              <h3 class="competencies__item-title">JavaScript</h3>
+              <p class="competencies__item-text">
                 это язык программирования, который используется для создания
                 динамического и интерактивного пользовательского интерфейса.
                 Хороший фронтенд разработчик должен быть знаком с основами
@@ -125,10 +148,16 @@
                 и манипуляцией данными на стороне клиента.
               </p>
             </li>
-            <li>
-              <img src="" alt="Icon React" />
-              <h3>Работа с библиотеками и фреймворками</h3>
-              <p>
+            <li class="competencies__item">
+              <img
+                class="competencies__icon"
+                src="icon_react_yello.png"
+                alt="Icon React"
+              />
+              <h3 class="competencies__item-title">
+                Работа с библиотеками и фреймворками
+              </h3>
+              <p class="competencies__item-text">
                 фронтенд разработчики должны быть знакомы с различными
                 библиотеками и фреймворками, такими как React, Angular, Vue и
                 другими. Умение использовать готовые решения, адаптировать их
@@ -136,10 +165,16 @@
                 очень важным навыком.
               </p>
             </li>
-            <li>
-              <img src="" alt="Icon mobail" />
-              <h3>Разработка для мобильных устройств и адаптивная верстка</h3>
-              <p>
+            <li class="competencies__item">
+              <img
+                class="competencies__icon"
+                src="icon_phone_yello.png"
+                alt="Icon mobail"
+              />
+              <h3 class="competencies__item-title">
+                Разработка для мобильных устройств и адаптивная верстка
+              </h3>
+              <p class="competencies__item-text">
                 фронтенд разработчики должны быть знакомы с различными
                 библиотеками и фреймворками, такими как React, Angular, Vue и
                 другими. Умение использовать готовые решения, адаптировать их
@@ -148,15 +183,100 @@
               </p>
             </li>
           </ul>
+        </section>
 
-          <a href="">Смотреть все проекты</a>
+        <section class="services">
+          <h2 class="competencies__item-title help">
+            Помогаю реализовать широкий спектр задач
+          </h2>
+          <ul class="services__wrapper">
+            <li class="services__item">
+              <img
+                class="services__picture"
+                src="help_1.png"
+                alt="сайт под ключ"
+              />
+              <div class="services__text">
+                <h3 class="main-title services-title">
+                  Разработка сайта под ключ
+                </h3>
+                <p class="competencies__item-text">
+                  Это создание дизайн веб-сайтов, созданный для удобства
+                  пользователя и решения бизнес-задач Сайты должны быть
+                  понятными и удобными, ведь чем понятнее сайт, тем быстрее
+                  пользователь совершит целевое действие
+                </p>
+              </div>
+            </li>
+            <li class="competencies__item">
+              <img
+                class="competencies__picture"
+                src="help_2.png"
+                alt="сайт под ключ"
+              />
+              <div class="services__text">
+                <h3 class="main-title services-title">Верстка сайта</h3>
+                <p class="competencies__item-text">
+                  Это создание дизайн веб-сайтов, созданный для удобства
+                  пользователя и решения бизнес-задач Сайты должны быть
+                  понятными и удобными, ведь чем понятнее сайт, тем быстрее
+                  пользователь совершит целевое действие
+                </p>
+              </div>
+            </li>
+            <li class="competencies__item">
+              <img
+                class="competencies__picture"
+                src="help_3.png"
+                alt="сайт под ключ"
+              />
+              <div class="services__text">
+                <h3 class="main-title services-title">
+                  Разработка мобильного интерфейса
+                </h3>
+                <p class="competencies__item-text">
+                  Это создание дизайн веб-сайтов, созданный для удобства
+                  пользователя и решения бизнес-задач Сайты должны быть
+                  понятными и удобными, ведь чем понятнее сайт, тем быстрее
+                  пользователь совершит целевое действие
+                </p>
+              </div>
+            </li>
+          </ul>
         </section>
       </div>
+      <section class="contact">
+        <div class="contact__cols">
+          <div class="container">
+            <div class="contact__col-left">
+              <h2 class="competencies__item-title contact-title">для связи:</h2>
+              <ul class="contact__left-items">
+                <li class="contact__item">
+                  <a class="contact__item-text" href="">instagram</a>
+                </li>
+                <li class="contact__item">
+                  <a class="contact__item-text" href="">telegram</a>
+                </li>
+                <li class="contact__item">
+                  <a class="contact__item-text" href="">mail</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+   
+          <div class="contact__col-right">
+            <img src="programmer1.png" alt="" />
+          </div>
+        </div>
+      </section>
     </main>
-    <button>Нажми меня</button>
-
-    <div class="output"></div>
-
-    <script src="./JS/index.js"></script>
+    <footer>
+      <div class="footer">
+        <h3 class="competencies__item-text footer-text">
+          Портфолио фротнтенд-разработчика Ирины Кравцовой
+        </h3>
+        <p class="header__title copyright">Все права защищены. 2023</p>
+      </div>
+    </footer>
   </body>
 </html>
