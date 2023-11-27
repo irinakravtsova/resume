@@ -253,6 +253,9 @@ svg {
 .services__wrapper {
   padding-top: 74px;
 }
+.services__item {
+  padding-bottom: 74px;
+}
 .help {
   max-width: 403px;
 }
@@ -268,6 +271,7 @@ svg {
 }
 .contact {
   margin-bottom: 150px;
+  margin-top: 150px;
 }
 .contact__cols {
   display: flex;

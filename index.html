@@ -33,10 +33,10 @@
               <h1 class="logo__title">КРЕАТИВНО <br> БЫСТРО<br> НАДЕЖНО</h1>
             </div>
             <div class="header__menu">
-              <a class="header__menu-link" href="#aboutus">портфолио</a>
-              <a class="header__menu-link" href="#projects">компетенции</a>
+              <a class="header__menu-link" href="#project">портфолио</a>
+              <a class="header__menu-link" href="#competencies">компетенции</a>
               <a class="header__menu-link" href="#services">услуги</a>
-              <a class="header__menu-link" href="#contacts">контакты</a>
+              <a class="header__menu-link" href="#contact">контакты</a>
             </div>
           </section>
           <div class="header__mask">
@@ -52,9 +52,9 @@
               </h1>
               
               <div class="header__mask-button">
-                <a class="header__button-p" href="/">Узнать больше</a>
+                <a class="header__button-p" href="#project">Узнать больше</a>
 
-                <!-- <p class="header__button-p">Узнать больше</p> -->
+               
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -79,7 +79,7 @@
     </header>
     <main>
       <div class="container">
-        <section class="project">
+        <section id="project"  class="project">
           <h2 class="main-title">Самые свежие проекты</h2>
           <ul class="project__wrapper">
             <li class="project__items item1">
@@ -98,12 +98,15 @@
             </li>
             <li class="project__items item2">
               <div class="project__item">
-                <img class="project__item-text" src="стикер3.png" alt="" />
-                <h3 class="project__item-title">Tesla</h3>
-                <p class="project__item-p">
+                <a href="https://irinakravtsova.github.io/Tesla/">
+                 <img class="project__item-text" src="стикер3.png" alt="" />
+                 <h3 class="project__item-title">Tesla</h3>
+                 <p class="project__item-p">
                   разработка <br />
                   интерфейса
                 </p>
+                </a>
+                
               </div>
             </li>
             <li class="project__items item3">
@@ -124,7 +127,7 @@
             <a class="project__btn-text" href="/">Смотреть все проекты</a>
           </div>
         </section>
-        <section class="competencies">
+        <section id="competencies" class="competencies">
           <h2 class="main-title">Мои компетенции</h2>
           <ul class="competencies__wrapper">
             <li class="competencies__item">
@@ -193,7 +196,7 @@
           </ul>
         </section>
 
-        <section class="services">
+        <section id="services" class="services">
           <h2 class="competencies__item-title help">
             Помогаю реализовать широкий спектр задач
           </h2>
@@ -252,8 +255,8 @@
             </li>
           </ul>
         </section>
-      </div>
-      <section class="contact">
+      </div> 
+      <section id="contact" class="contact">
         <div class="contact__cols">
           <div class="container">
             <div class="contact__col-left">
@@ -263,10 +266,11 @@
                   <a class="contact__item-text" href="">instagram</a>
                 </li>
                 <li class="contact__item">
-                  <a class="contact__item-text" href="">telegram</a>
+                  <a class="contact__item-text" href="https://t.me/IrinaKavtsova">telegram</a>
                 </li>
                 <li class="contact__item">
-                  <a class="contact__item-text" href="">mail</a>
+                  <a class="contact__item-text" href="mailto:kosmonavt980@gmail.com">mail</a>
+                  
                 </li>
               </ul>
             </div>
