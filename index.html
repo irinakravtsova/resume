@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <title>Резюме</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,277 +20,367 @@
       href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="index.css" />
+   
+    <link rel="stylesheet" href="./css/style.css">
+
+    
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <div class="header">
-          <section class="section__nav">
-            <a class="logo-link" href="/">
-              <img class="logo" src="logo.png" alt="logo_IrinaKavtsova" />              
-            </a>
-            <div class="logo__text">
-              <h1 class="logo__title">КРЕАТИВНО <br> БЫСТРО<br> НАДЕЖНО</h1>
-            </div>
-            <div class="header__menu">
-              <a class="header__menu-link" href="#project">портфолио</a>
-              <a class="header__menu-link" href="#competencies">компетенции</a>
-              <a class="header__menu-link" href="#services">услуги</a>
-              <a class="header__menu-link" href="#contact">контакты</a>
-            </div>
-          </section>
-          <div class="header__mask">
-            <div class="header__mask-text">
-              <h2 class="header__text">
-                Привет, я Ирина
-                <span>— фронтенд разрaботчик и немного дизайнер</span>
-              </h2>
-              <h1 class="header__title">
-                Разрабатываю имиджевые сайты для малого и среднего бизнеса,
-                которые повышают престиж компании и позволяют выделиться на фоне
-                конкурентов
-              </h1>
-              
-              <div class="header__mask-button">
-                <a class="header__button-p" href="#project">Узнать больше</a>
-
-               
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="10"
-                  viewBox="0 0 24 10"
-                  fill="none"
-                >
-                  <path
-                    d="M23.4596 5.45962C23.7135 5.20578 23.7135 4.79422 23.4596 4.54038L19.323 0.403808C19.0692 0.149967 18.6576 0.149967 18.4038 0.403808C18.15 0.657648 18.15 1.06921 18.4038 1.32305L22.0808 5L18.4038 8.67696C18.15 8.9308 18.15 9.34235 18.4038 9.5962C18.6576 9.85004 19.0692 9.85004 19.323 9.5962L23.4596 5.45962ZM-5.68248e-08 5.65L23 5.65L23 4.35L5.68248e-08 4.35L-5.68248e-08 5.65Z"
-                    fill="black"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class="header__mask-img">
-              <img class="header__mask-img-fone" src="fone1.png" alt="fone" />
-              <img class="header__mask-img-foto" src="фото_23.png" alt="foto" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="container">
-        <section id="project"  class="project">
-          <h2 class="main-title">Самые свежие проекты</h2>
-          <ul class="project__wrapper">
-            <li class="project__items item1">
-              <div class="project__item">
-                <a href="https://irinakravtsova.github.io/metric/">
-                  <img class="project__item-text" src="стикер3.png" alt="" />
-                  <h3 class="project__item-title">Метрика</h3>
-                  <p class="project__item-p">
-                    разработка <br />
-                    интерфейса
-                  </p>
-
+         <nav class="header__nav">
+            <div class="header__logo">
+                <a class="header__logo-link" href="#">
+                  <img class="logo" src="./resurses/logo.png" alt="logo_IrinaKavtsova" />              
                 </a>
-              
-              </div>
-            </li>
-            <li class="project__items item2">
-              <div class="project__item">
-                <a href="https://irinakravtsova.github.io/Tesla/">
-                 <img class="project__item-text" src="стикер3.png" alt="" />
-                 <h3 class="project__item-title">Tesla</h3>
-                 <p class="project__item-p">
-                  разработка <br />
-                  интерфейса
-                </p>
+                <div class="logo__brend">
+                  <p class="logo__title">КРЕАТИВНО <br> БЫСТРО<br> НАДЕЖНО</p>
+                </div>
+            </div>
+            <ul class="nav__list">
+                  <li class="nav__item" >
+                    <a class="nav__link" href="#project">портфолио</a>
+                  </li>
+                  <li>
+                    <a class="nav__link" href="#competencies">компетенции</a>
+                  </li>
+                  <li>
+                    <a class="nav__link" href="#services">услуги</a>
+                  </li>
+                  <li>
+                    <a class="nav__link" href="#contact">контакты</a>
+                  </li>
+            </ul>
+            <button class="burger-btn js-burger-btn" >
+                  <span class="burger_line"></span>
+                  <span class="burger_line"></span>
+                  <span class="burger_line"></span>
+            </button>
+            </nav>
+           </div>
+          </header>
+          <div class="js-burger burger">
+             <div class="js-burger__content burger__content">
+              <div class="header__logo">
+                <a class="header__logo-link" href="#">
+                  <img class="logo" src="./resurses/logo.png" alt="logo_IrinaKavtsova" />              
                 </a>
+                <div class="logo__brend">
+                  <p class="logo__title">КРЕАТИВНО <br> БЫСТРО<br> НАДЕЖНО</p>
+                </div>
+             </div>
                 
-              </div>
-            </li>
-            <li class="project__items item3">
-              <div class="project__item Find_your">
-                <a class="project__item Find_your-link" href="https://irinakravtsova.github.io/Find-your-peace/">
-                  <img class="project__item-text" src="стикер3.png" alt="" />
-                  <h3 class="project__item-title">Find your peace</h3>
-                  <p class="project__item-p">
-                    разработка <br />
-                    интерфейса
-                  </p>
-                </a>
-               
-              </div>
-            </li>
-          </ul>
-          <div class="project__btn">
-            <a class="project__btn-text" href="/">Смотреть все проекты</a>
+              <nav class="burger-nav">
+                   <ul>
+                    <li>
+                     <a class="burger-nav__link" href="#project">портфолио</a>
+                    </li>  
+                    <li>
+                     <a class="burger-nav__link" href="#competencies">компетенции</a>
+                    </li> 
+                    <li>
+                     <a class="burger-nav__link" href="#services">Услуги</a>
+                    </li> 
+                    <li>
+                     <a class="burger-nav__link" href="#contacts">Контакты</a>
+                    </li>           
+                   </ul>
+                  </nav>
+                    <div class="js-burger__content burger__contact">
+                      <p class="burger__contact-title">для связи:</p>
+                      <ul>
+                       <li>
+                        <a class="burger__phone" href="tel:+79358954535">+7 935 895-45-35</a>
+                       </li> 
+                       <li>
+                         <a class="burger__tg" href="https://t.me/IrinaKavtsova" target="_blank">@IrinaKavtsova</a>
+                       </li>
+                      </ul>
+            
+                    </div>
+               </div>
           </div>
+     
+    <main>
+      <section class="hero">
+        <div class="container">
+         <div class="hero__inner">
+            <div class="hero__wrapper">
+   
+                <h2 class="hero__wrapper_text">
+                  Привет, я Ирина
+                  <span>— фронтенд разрaботчик и немного дизайнер сайтов</span>
+                </h2>
+                <h1 class="hero__wrapper_title">
+                  Разрабатываю имиджевые сайты для малого и среднего бизнеса,
+                  которые повышают престиж компании и позволяют выделиться на фоне
+                  конкурентов
+                </h1>
+                
+                <div class="hero__wrapper_mask-button">
+                  <a class="hero__wrapper_button" href="#project">Узнать больше</a>
+    
+                 
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="10"
+                    viewBox="0 0 24 10"
+                    fill="none"
+                  >
+                    <path
+                      d="M23.4596 5.45962C23.7135 5.20578 23.7135 4.79422 23.4596 4.54038L19.323 0.403808C19.0692 0.149967 18.6576 0.149967 18.4038 0.403808C18.15 0.657648 18.15 1.06921 18.4038 1.32305L22.0808 5L18.4038 8.67696C18.15 8.9308 18.15 9.34235 18.4038 9.5962C18.6576 9.85004 19.0692 9.85004 19.323 9.5962L23.4596 5.45962ZM-5.68248e-08 5.65L23 5.65L23 4.35L5.68248e-08 4.35L-5.68248e-08 5.65Z"
+                      fill="black"
+                    />
+                  </svg>
+              </div>
+             
+              </div>
+              <div class="hero__image">
+              
+                <img class="hero__image-foto" src="./resurses/фото_1_1.gif" alt="foto" />
+              </div>
+            </div>
+          
+          </div>
+         </div>
+      </section>
+     
+        <section id="project"  class="project">
+         <div class="container">
+          <h2 class="title">Самые свежие проекты</h2>
+          <div class="project__inner">
+            <div class="project__box-metric">
+              <img class="project__image" src="./resurses/metric_2.jpg" alt="">
+              
+              <a class="project__link" href="https://irinakravtsova.github.io/metric/" target="_blank">дизайн интерьера</a>
+              <p class="project__image-title">Метрика</p>
+              <p class="project__image-text">верстка, настройка</p>
+              
+            </div>
+            <div class="project__box">
+                <img class="project__image" src="./resurses/tesla.jpg" alt="">
+                <a class="project__link" href="https://irinakravtsova.github.io/Tesla/" target="_blank">презентация продукта</a>
+                <p class="project__image-title">Tesla</p>
+                <p class="project__image-text">верстка, настройка</p>
+             </div>
+           
+            <div class="project__box">
+                <img class="project__image" src="./resurses/find your peace.jpg" alt="">
+                <a class="project__link" href="https://irinakravtsova.github.io/Find-your-peace/" target="_blank">презентация услуг</a>
+                <p class="project__image-title">Find your peace</p>
+                <p class="project__image-text">верстка, настройка</p>
+              
+            </div>
+            
+          </div>
+   
+          <a class="project__btn" href="/">Смотреть все проекты</a>
+         </div>
         </section>
-        <section id="competencies" class="competencies">
-          <h2 class="main-title">Мои компетенции</h2>
-          <ul class="competencies__wrapper">
-            <li class="competencies__item">
-              <img
-                class="competencies__icon"
-                src="icon_html_yello.png"
-                alt="Icon HTML"
-              />
-              <h3 class="competencies__item-title">HTML и CSS</h3>
-              <p class="competencies__item-text">
-                это основа фронтенд разработки. Умение создавать и правильно
-                структурировать HTML-документы, а также применять стили к этим
-                документам на CSS, является обязательным навыком для каждого
-                фронтенд разработчика.
-              </p>
-            </li>
-            <li class="competencies__item">
-              <img
-                class="competencies__icon"
-                src="icon_JS_yello.png"
-                alt="Icon JS"
-              />
-              <h3 class="competencies__item-title">JavaScript</h3>
-              <p class="competencies__item-text">
-                это язык программирования, который используется для создания
-                динамического и интерактивного пользовательского интерфейса.
-                Хороший фронтенд разработчик должен быть знаком с основами
-                JavaScript, включая работу с DOM-деревом, асинхронными запросами
-                и манипуляцией данными на стороне клиента.
-              </p>
-            </li>
-            <li class="competencies__item">
-              <img
-                class="competencies__icon"
-                src="icon_react_yello.png"
-                alt="Icon React"
-              />
-              <h3 class="competencies__item-title">
-                Работа с библиотеками и фреймворками
-              </h3>
-              <p class="competencies__item-text">
-                фронтенд разработчики должны быть знакомы с различными
-                библиотеками и фреймворками, такими как React, Angular, Vue и
-                другими. Умение использовать готовые решения, адаптировать их
-                под нужды проекта и расширять их функциональность, является
-                очень важным навыком.
-              </p>
-            </li>
-            <li class="competencies__item">
-              <img
-                class="competencies__icon"
-                src="icon_phone_yello.png"
-                alt="Icon mobail"
-              />
-              <h3 class="competencies__item-title">
-                Разработка для мобильных устройств и адаптивная верстка
-              </h3>
-              <p class="competencies__item-text">
-                фронтенд разработчики должны быть знакомы с различными
-                библиотеками и фреймворками, такими как React, Angular, Vue и
-                другими. Умение использовать готовые решения, адаптировать их
-                под нужды проекта и расширять их функциональность, является
-                очень важным навыком.
-              </p>
-            </li>
-          </ul>
+       
+        <section id="skills" class="skills">
+          <div class="container">
+            <h2 class="title">Мои компетенции</h2>
+            <ul class="skills__item-wrapper">
+              <li class="skill__item">
+                <img
+                  class="skill__item-icon"
+                  src="./resurses/icon_html_yello.png"
+                  alt="Icon HTML"
+                />
+                <h3 class="skill__item-title">HTML и CSS</h3>
+                <p class="text">
+                  владею основами фронтенд разработки: имею навыки создания и правильного
+                  структурирования HTML-документов, а также применения стилей к этим
+                  документам на CSS.
+                </p>
+              </li>
+              <li class="skill__item">
+                <img
+                  class="skill__item-icon"
+                  src="./resurses/icon_JS_yello.png"
+                  alt="Icon JS"
+                />
+                <h3 class="skill__item-title">JavaScript</h3>
+                <p class="text">
+                  владею языком программирования, который используется для создания
+                  динамического и интерактивного пользовательского интерфейса.
+                  Отлично знаю основы JavaScript, включая работу с DOM-деревом, асинхронными запросами
+                  и манипуляцией данными на стороне клиента.
+                </p>
+              </li>
+              <li class="skill__item">
+                <img
+                  class="skill__item-icon"
+                  src="./resurses/icon_react_yello.png"
+                  alt="Icon React"
+                />
+                <h3 class="skill__item-title skill__item-title_big-spase">
+                  Работа с библиотеками и фреймворками
+                </h3>
+                         
+                <p class="text">
+                  знакома с различными библиотеками и фреймворками, такими как React, Angular, Vue и
+                  другими. Владею навыками использовать готовые решения, адаптировать их
+                  под нужды проекта и расширять их функциональность.
+                </p>
+              </li>
+              <li class="skill__item">
+                <img
+                  class="skill__item-icon"
+                  src="./resurses/icon_phone_yello.png"
+                  alt="Icon mobail"
+                />
+                <h3 class="skill__item-title">
+                  Разработка для мобильных устройств и адаптивная верстка
+                </h3>
+                <p class="text">
+                 отлично владею навыками формирования структуры документа, предусматривающей автоматическое изменение страницы в зависимости от размера экрана пользователя. 
+                </p>
+              </li>
+            </ul>
+          </div>
+        
         </section>
 
         <section id="services" class="services">
-          <h2 class="competencies__item-title help">
-            Помогаю реализовать широкий спектр задач
-          </h2>
-          <ul class="services__wrapper">
-            <li class="services__item">
-              <img
-                class="services__picture"
-                src="help_1.png"
-                alt="сайт под ключ"
-              />
-              <div class="services__text">
-                <h3 class="main-title services-title">
-                  Разработка сайта под ключ
-                </h3>
-                <p class="competencies__item-text">
-                  Это создание дизайн веб-сайтов, созданный для удобства
-                  пользователя и решения бизнес-задач Сайты должны быть
-                  понятными и удобными, ведь чем понятнее сайт, тем быстрее
-                  пользователь совершит целевое действие
-                </p>
-              </div>
-            </li>
-            <li class="competencies__item">
-              <img
-                class="competencies__picture"
-                src="help_2.png"
-                alt="сайт под ключ"
-              />
-              <div class="services__text">
-                <h3 class="main-title services-title">Верстка сайта</h3>
-                <p class="competencies__item-text">
-                  Это создание дизайн веб-сайтов, созданный для удобства
-                  пользователя и решения бизнес-задач Сайты должны быть
-                  понятными и удобными, ведь чем понятнее сайт, тем быстрее
-                  пользователь совершит целевое действие
-                </p>
-              </div>
-            </li>
-            <li class="competencies__item">
-              <img
-                class="competencies__picture"
-                src="help_3.png"
-                alt="сайт под ключ"
-              />
-              <div class="services__text">
-                <h3 class="main-title services-title">
-                  Разработка мобильного интерфейса
-                </h3>
-                <p class="competencies__item-text">
-                  Это создание дизайн веб-сайтов, созданный для удобства
-                  пользователя и решения бизнес-задач Сайты должны быть
-                  понятными и удобными, ведь чем понятнее сайт, тем быстрее
-                  пользователь совершит целевое действие
-                </p>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </div> 
-      <section id="contact" class="contact">
-        <div class="contact__cols">
           <div class="container">
-            <div class="contact__col-left">
-              <h2 class="competencies__item-title contact-title">для связи:</h2>
-              <ul class="contact__left-items">
-                <li class="contact__item">
-                  <a class="contact__item-text" href="">instagram</a>
-                </li>
-                <li class="contact__item">
-                  <a class="contact__item-text" href="https://t.me/IrinaKavtsova">telegram</a>
-                </li>
-                <li class="contact__item">
-                  <a class="contact__item-text" href="mailto:kosmonavt980@gmail.com">mail</a>
+           <h2 class="services-title" >Помогаю реализовать широкий спектр задач</h2>
+           <ul>
+            <li class="services__box">
+              <img
+              class="services__image"
+              src="./resurses/help_1.png"
+              alt="сайт под ключ"
+              />
+        
+              <div class="services__wrapper">
+                <div class="services__item">
+                  <h3 class="title">Разработка сайта под ключ</h3>
+                </div>
+                <div class="services__item">
+                  <p class="text">
+                    Это создание дизайн веб-сайтов, созданный для удобства пользователя и решения бизнес-задач
+                    <br>Сайты должны быть понятными и удобными, ведь чем понятнее сайт, тем быстрее пользователь совершит целевое действие
+                  </p>
+               </div>
+              </div>
+            </li>
+            <li class="services__box" >
+              <img
+              class="services__image"
+              src="./resurses/help_2.png"
+              alt="сайт под ключ"
+              />
+              <div class="services__wrapper">
+                <div class="services__item">
+                  <h3 class="title">Верстка сайтов</h3>
+                </div>
+                <div class="services__item">
+                  <p class="text">
+                    Это процесс создания HTML-документов и применения к ним стилей на CSS. Фронтенд разработчик может помочь создать привлекательный и удобный интерфейс для вашего сайта
+                 </p>
+                </div>
+              </div>
+            </li>
+           </ul>
+            <div class="services__box">
+              
+                 
+              <div class="services__box">
+             
+                </div>
+                <div class="services__box">
+                  <img
+                    class="services__image"
+                    src="./resurses/help_3.png"
+                    alt="сайт под ключ"
+                    />
+                    <div class="services__wrapper">
+                      <div class="services__item">
+                        <h3 class="title">
+                          Разработка мобильного интерфейса
+                           </h3>
+                      </div>
+                      <div class="services__item">
+                        <p class="text">
+                          Это процесс создания интерактивных элементов на странице с помощью JavaScript. Фронтенд разработчик может помочь создать динамический и удобный пользовательский интерфейс для вашего сайта или приложения.
+                        </p>
+                      </div>
+                      </div>
+                  </div> 
                   
-                </li>
-              </ul>
+              </div>
+             </div>
+             
             </div>
           </div>
-   
-          <div class="contact__col-right">
-            <img src="programmer1.png" alt="" />
+        </section>
+     
+      <section id="contact" class="contact">
+        <div class="contact__wrapper">
+          <div class="container">
+            
+             <div class="contact__text">
+              <h2 class="contact__title">Для связи со мной заполните простую форму</h2>
+                 
+             <form class="order__form" action="/example/handler.php" >
+              <form class="order__form" action="/example/handler.php">
+                <input class=" order__input" type="text" name="name" placeholder="Имя Фамилия ">
+          
+                <input class="order__input" type="email" name="email" placeholder="example@mail.com">
+          
+              
+
+                <button class="popup__btn-form" type="submit">  Отправить</button>
+               
+              </form>
+                   
+               </div>
+       
           </div>
-        </div>
-      </section>
+       <img class="contact__image" src="./resurses/programmer1.png" alt="" />
+       </div>
+     </section>
     </main>
     <footer>
-      <div class="footer">
-        <h3 class="competencies__item-text footer-text">
-          Портфолио фротнтенд-разработчика Ирины Кравцовой
-        </h3>
-        <p class="header__title copyright">Все права защищены. 2023</p>
+      <div class="footer__wrapper">
+        <div class="container">
+          <div class="footer__contact">
+               <h3 class="footer__text">
+              Портфолио фротнтенд-разработчика Ирины Кравцовой
+            </h3>
+            <ul class="footer__contact_contact">
+              <li>
+                <a class="footer__text" href="mailto:hello@mail.com">mail</a>
+               
+              </li>
+              <li>
+                <a class="footer__text" href="https://t.me/IrinaKavtsova" target="_blank">telegram</a>
+              </li>
+              <li>
+                <a class="footer__text" href="https://t.me/IrinaKavtsova" target="_blank">instagam</a>
+              </li>
+              
+            </ul>
+           
+          </div>
+          <div class="footer__copyright">
+            <p class="footer__copyright_text">Все права защищены. 2023</p>
+            <p class="footer__copyright_text">политика обработки данных</p>
+          </div>
+        </div>
+  
       </div>
+     
     </footer>
+
+  
+    <script src="./js/gallery.js"></script>
+    <script src="./js/popup.js"></script>
+    <script src="./js/popup.js"></script>
+
   </body>
 </html>
