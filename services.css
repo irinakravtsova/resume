@@ -1,0 +1,74 @@
+.services {
+    margin-bottom: 150px;
+}
+.services-title {
+ margin-bottom: 80px;
+max-width: 403px;
+font-family: IBM Plex Mono;
+font-size: 35px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -1.05px;
+color: #FFF;
+}
+.services__box {
+  margin-bottom: 40px;
+}
+.services__wrapper {
+
+  display: flex;
+   justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  gap: 30px;
+  padding: 40px;
+   border-radius: 30px;
+  background: #222a43;
+ 
+} 
+.services__item {
+display: inline-block;
+  width: calc(50% - 5.5px);
+}
+.services__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 961px) {
+  .services {
+    margin-bottom: 110px;
+}
+.services-title {
+  margin-bottom: 60px;
+   font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.84px;
+}
+.services__wrapper {
+       gap: 20px;
+         padding: 36px 36px 36px 32px;
+       height: 100%;
+       width: 100%;
+       /* flex-wrap: wrap; */
+ }
+}
+
+@media (max-width: 541px) {
+  .services {
+    margin-bottom: 100px;
+}
+.services__wrapper {
+  flex-direction: column;
+   gap: 15px;
+    padding: 30px 34px 30px 21px;
+ 
+}
+.services__item {
+ 
+    width: 100%
+  }
+}
+
