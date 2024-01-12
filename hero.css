@@ -1,0 +1,113 @@
+.hero {
+  margin-bottom: 150px;
+}
+.hero__inner {
+  display: flex;
+}
+.hero__wrapper {
+  margin-top: 105px;
+  width: 50%;
+}
+.hero__wrapper_text {
+  margin-bottom: 24px;
+  font-family: Montserrat;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 128.6%;
+  letter-spacing: 0.3px;
+  color: #fff;
+}
+.hero__wrapper_text span {
+  color: #fde047;
+}
+.hero__wrapper_title {
+  margin-bottom: 50px;
+  font-family: Montserrat;
+  font-size: 16px;
+   line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+  color: #fff;
+}
+.hero__wrapper_mask-button {
+  width: 194px;
+  height: 60px;
+  background: #fcdf4a;
+  display: flex;
+}
+.hero__wrapper_button {
+  margin-top: 18px;
+  margin-left: 18px;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.3px;
+  color: #000;
+  text-decoration: none;
+}
+svg {
+  margin: auto;
+}
+.hero__image {
+  position: relative;
+  background-image: url(../resurses/fone1.png);
+ /* background-size: 100%; */
+ width: 728px;
+  height: 685px;
+  padding-left: 16px;
+}
+.header-img-fon {
+  
+}
+.hero__image-foto {
+  /* position: absolute; */
+  left: 311px;
+  top: 0px;
+  /* max-height: 750px; */
+  width: 100%;
+}
+.header__mask-img-foto1 {
+  position: absolute;
+  left: 120px;
+  top: 0px;
+  height: 900px;
+}
+
+
+@media (max-width: 961px) {
+  .hero__wrapper_text {
+       font-size: 40px;
+      line-height: 47px;
+    letter-spacing: -1.2px;
+   
+  }
+  .hero__image-foto {
+      left: 234px;
+    top: 32px;
+    height: 690px;
+  }
+}
+
+
+
+@media (max-width: 541px) {
+  .hero {
+    margin-bottom: 100px;
+  }
+  .hero__wrapper {
+    margin-top: 50px;
+  
+  }
+
+  .hero__wrapper_text {
+       font-size: 32px;
+      line-height: 39px;
+    letter-spacing: -0.6px;
+   
+  }
+  .hero__image-foto {
+      left: 77px;
+    top: 32px;
+    height: 690px;
+  }
+}
