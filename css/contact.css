@@ -5,10 +5,16 @@
 .contact__wrapper {
   position: relative;
   display: flex;
+  justify-content: space-between;
   background-color: #222a43;
    border-radius: 30px;
 }
-
+/* .contact__image {
+  position: absolute;
+  width: calc(50% - 5.5px);
+  max-height: 717px;
+  background-image: url(/resurses/программер1.1-svg.svg);
+} */
 .contact__inner {
  
   display: flex;
@@ -20,7 +26,7 @@
   top: 0;
   left: 730px;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
   max-height: 717px;
 /* width: 100%; */
 
