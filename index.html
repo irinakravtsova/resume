@@ -1,392 +1,193 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./resurses/favicon.png" type="image/png">
-    <title>Портфолио Кравцовой Ирины</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;1,9..40,500&family=Montserrat:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap"
-      rel="stylesheet"
-    />
-   
-    <link rel="stylesheet" href="./css/style.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <title>Психолог Юрий Михеев</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
     
-  </head>
-
-  <body>
-    <header class="header">
+        <nav class="header__nav"> 
+          <ul class="nav__list">
+            <li class="nav__item" >
+              <a class="nav__link " href="#about">Обо мне</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#projects">Проекты</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#services">Услуги</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>            
+          <a class="logo__link" href="#">
+            <!-- <img class="logo__img" src="logo_mетрика.png" 
+             alt="logo_mетрика"> -->
+             <p class="logo__title">Юрий Михеев</p>
+          </a> 
+          <ul class="header__contact">
+            <li>
+              <a class="header__contact-fb" href="#" target="_blank"><img src="./resurses/header_fb-svg.svg" alt=""></a>
+            </li>
+            <li>
+              <a class="header__contact-in" href="#" target="_blank"><img src="./resurses/header_insta-svg.svg" alt=""></a>
+            </li>
+            <li>
+              <a class="header__contact-in" href="https://t.me/Yuriy_Mikheev" target="_blank"><img src="./resurses/TG (4).svg" alt=""></a>
+            </li>
+          </ul>
+          
+          <button class="js-burger-btn burger-btn">
+            <span class="burger_line long"></span>
+            <span class="burger_line"></span>
+          </button>
+        </nav>
+      
+     </div>
+  </header>
+  <div class="js-burger burger">
+     <div class=" burger__content">
+          <a class="logo-link" href="#">
+            <img class="logo-burger" src="logo_mетрика.png" alt="logo_mетрика">
+          </a> 
+          <nav class="burger-nav">
+            <ul>
+             <li>
+              <a class="burger-nav__link" href="#about">О нас</a>
+             </li>  
+             <li>
+              <a class="burger-nav__link" href="#projects">Проекты</a>
+             </li> 
+             <li>
+              <a class="burger-nav__link" href="#services">Услуги</a>
+             </li> 
+             <li>
+              <a class="burger-nav__link" href="#contacts">Контакты</a>
+             </li>           
+            </ul>
+           </nav>
+           <div class="js-burger__content burger__contact">
+            <p class="burger__contact-title">для связи:</p>
+            <ul>
+              <li>
+                <a class="burger__phone" href="tel:+79358954535">+7 935 895-45-35</a>
+              </li>
+              <li>
+                <a class="burger__tg" href="https://t.me/IrinaKavtsova" target="_blank">@IrinaKavtsova</a>
+              </li>
+            </ul>
+     
+           </div>
+        </div>
+   </div>
+   <main>
+    <section class="hero">
       <div class="container">
-         <nav class="header__nav">
-            <div class="header__logo">
-                <a class="header__logo-link" href="#">
-                  <img class="logo" src="./resurses/logo.svg" alt="logo_IrinaKavtsova" />              
-                </a>
-                <div class="logo__brend">
-                  <p class="logo__title">КРЕАТИВНО <br> БЫСТРО<br> НАДЕЖНО</p>
-                </div>
-            </div>
-            <ul class="nav__list">
-                  <li class="nav__item" >
-                    <a class="nav__link" href="#project">портфолио</a>
-                  </li>
-                  <li>
-                    <a class="nav__link" href="#skills">компетенции</a>
-                  </li>
-                  <li>
-                    <a class="nav__link" href="#services">услуги</a>
-                  </li>
-                  <li>
-                    <a class="nav__link" href="#contact">контакты</a>
-                  </li>
-            </ul>
-            <button class="burger-btn js-burger-btn" >
-                  <span class="burger_line"></span>
-                  <span class="burger_line"></span>
-                  <span class="burger_line"></span>
-            </button>
-            </nav>
-           </div>
-          </header>
-          <div class="js-burger burger">
-             <div class="js-burger__content burger__content">
-              <div class="header__logo">
-                <a class="header__logo-link" href="#">
-                  <img class="logo" src="./resurses/logo.svg" alt="logo_IrinaKavtsova" />              
-                </a>
-                <div class="logo__brend">
-                  <p class="logo__title">КРЕАТИВНО <br> БЫСТРО<br> НАДЕЖНО</p>
-                </div>
-             </div>
-                
-              <nav class="burger-nav">
-                   <ul>
-                    <li>
-                     <a class="burger-nav__link" href="#project">портфолио</a>
-                    </li>  
-                    <li>
-                     <a class="burger-nav__link" href="#skills">компетенции</a>
-                    </li> 
-                    <li>
-                     <a class="burger-nav__link" href="#services">Услуги</a>
-                    </li> 
-                    <li>
-                     <a class="burger-nav__link" href="#contact">Контакты</a>
-                    </li>           
-                   </ul>
-                  </nav>
-                    <div class="js-burger__content burger__contact">
-                      <p class="burger__contact-title">для связи:</p>
-                      <ul>
-                       <li>
-                        <a class="burger__phone" href="tel:+79200403452">+7 920 040-34-52</a>
-                       </li> 
-                       <li>
-                         <a class="burger__tg" href="https://t.me/IrinaKavtsova" target="_blank">@IrinaKavtsova</a>
-                       </li>
-                      </ul>
-            
-                    </div>
-               </div>
-          </div>
-     
-    <main>
-      <section class="hero">
-        <div class="container">
-         <div class="hero__inner">
-            <div class="hero__wrapper">
-                <h2 class="hero__wrapper_text">
-                  Привет, я Ирина
-                  <span>— фронтенд разрaботчик и дизайнер сайтов</span>
-                </h2>
-                <h1 class="hero__wrapper_title">
-                  Разрабатываю имиджевые сайты для малого и среднего бизнеса,
-                  которые повышают престиж компании и позволяют выделиться на фоне
-                  конкурентов
-                </h1>
-                
-                <div class="hero__wrapper_mask-button">
-                  <a class="hero__wrapper_button" href="#project">Узнать больше</a>
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="10"
-                    viewBox="0 0 24 10"
-                    fill="none"
-                  >
-                    <path
-                      d="M23.4596 5.45962C23.7135 5.20578 23.7135 4.79422 23.4596 4.54038L19.323 0.403808C19.0692 0.149967 18.6576 0.149967 18.4038 0.403808C18.15 0.657648 18.15 1.06921 18.4038 1.32305L22.0808 5L18.4038 8.67696C18.15 8.9308 18.15 9.34235 18.4038 9.5962C18.6576 9.85004 19.0692 9.85004 19.323 9.5962L23.4596 5.45962ZM-5.68248e-08 5.65L23 5.65L23 4.35L5.68248e-08 4.35L-5.68248e-08 5.65Z"
-                      fill="black"
-                    />
-                  </svg>
-              </div>
-              </div>
-              <div class="hero__image">
-                 <img class="hero__image-foto" src="./resurses/программер2.svg" alt="foto" />
-              </div>
-            </div>
-          </div>
-         </div>
-      </section>
-     
-        <section id="project"  class="project">
-         <div class="container">
-          <h2 class="title">Самые свежие проекты</h2>
-          <div class="project__inner">
-
-            <div class="project__box-metric">
-              <a class="project__link" href="http://irinakravtsova.github.io/metric/" target="_blank">
-                <img class="project__image" src="./resurses/metric_2.jpg" alt="metric">
-                <img class="project__link_image" src="./resurses/стикер3.png" alt="стикер">
-                <p class="project__link_text">дизайн <br>интерьера</p>
-              </a>
-              <p class="project__image-title">Метрика</p>
-              <p class="project__image-text">верстка, настройка</p>
-             </div>
-
-             <a class="project__link" href="http://irinakravtsova.github.io/Tesla/" target="_blank">
-              <div class="project__box">
-                <img class="project__image" src="./resurses/tesla.jpg" alt="tesla">
-                <img class="project__link_image" src="./resurses/стикер3.png" alt="стикер">
-                <p class="project__link_text">презентация<br>продукта</p>
-                <p class="project__image-title">Tesla</p>
-                <p class="project__image-text">верстка, настройка</p>
-              </div>
-            </a>
-
-            <a class="project__link" href="https://irinakravtsova.github.io/Find-your-peace/" target="_blank">
-              <div class="project__box">
-                  <img class="project__image" src="./resurses/find your peace.jpg" alt="Find-your-peace">
-                  <img class="project__link_image" src="./resurses/стикер3.png" alt="стикер">
-                  <p class="project__link_text">презентация<br>услуг</p>
-                  <p class="project__image-title">Find your peace</p>
-                   <p class="project__image-text">верстка, настройка</p>
-             </div>
-            </a>
-           </div>
-           <a class="project__btn" href="/">Смотреть все проекты</a>
-          </div>
-        </section>
-       
-        <section id="skills" class="skills">
-          <div class="container">
-            <h2 class="title">Мои компетенции</h2>
-            <ul class="skills__item-wrapper">
-              <img class="scill__wrapper_bg" src="./resurses/программер3.svg" alt="">
-              <li class="skill__item">
-                <img
-                  class="skill__item-icon"
-                  src="./resurses/icon_html_yello.png"
-                  alt="Icon HTML"
-                />
-                <h3 class="skill__item-title">HTML и CSS</h3>
-                <p class="text">
-                  владею основами фронтенд разработки: имею навыки создания и правильного
-                  структурирования HTML-документов, а также применения стилей к этим
-                  документам на CSS
-                </p>
-               
-              </li>
-              <li class="skill__item">
-                <img
-                  class="skill__item-icon"
-                  src="./resurses/icon_JS_yello.png"
-                  alt="Icon JS"
-                />
-                <h3 class="skill__item-title">JavaScript</h3>
-                <p class="text">
-                  владею языком программирования, который используется для создания
-                  динамического и интерактивного пользовательского интерфейса.
-                  Отлично знаю основы JavaScript, включая работу с DOM-деревом, асинхронными запросами
-                  и манипуляцией данными на стороне клиента.
-                </p>
-              </li>
-              <li class="skill__item">
-                <img
-                  class="skill__item-icon"
-                  src="./resurses/icon_react_yello.png"
-                  alt="Icon React"
-                />
-                <h3 class="skill__item-title skill__item-title_big-spase">
-                  Работа с библиотеками и фреймворками
-                </h3>
-                         
-                <p class="text">
-                  знакома с различными библиотеками и фреймворками, такими как React, Angular, Vue и
-                  другими. Владею навыками использовать готовые решения, адаптировать их
-                  под нужды проекта и расширять их функциональность.
-                </p>
-              </li>
-              <li class="skill__item">
-                <img
-                  class="skill__item-icon"
-                  src="./resurses/icon_phone_yello.png"
-                  alt="Icon mobail"
-                />
-                <h3 class="skill__item-title">
-                  Разработка для мобильных устройств и адаптивная верстка
-                </h3>
-                <p class="text">
-                 отлично владею навыками формирования структуры документа, предусматривающей автоматическое изменение страницы в зависимости от размера экрана пользователя. 
-                </p>
-              </li>
-            </ul>
-          </div>
-        
-        </section>
-
-        <section id="services" class="services">
-          <div class="container">
-           <h2 class="services-title" >Помогаю реализовать широкий спектр задач</h2>
-           <ul>
-            <li class="service__item">
-              <div class="service__box">
-                <picture>
-                  <source
-                    media="(max-width: 541px)"
-                    srcset="./resurses/help1.1.png"/>
-                    <img
-                    class="service__image"
-                    src="./resurses/help_1.png"
-                    alt="сайт под ключ"
-                    />
-                </picture>
-              </div>
-              <div class="service__content">
-                <div class="service__content-item">
-                  <h3 class="service__title">Разработка сайта под ключ</h3>
-                </div>
-                <div class="service__content-item">
-                  <p class="text">
-                    создаю дизайн веб-сайтов удобный для пользователя и решения бизнес-задач.
-                    <br>Понятные и удобные сайты привлекают пользователей и способствуют совершить целевое действие
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="service__item">
-              <div class="service__box">
-               <picture>
-                <source
-                  media="(max-width: 541px)"
-                  srcset="./resurses/help2.1.png"/>
-                  <img
-                  class="service__image"
-                  src="./resurses/help_2.png"
-                  alt="верстка"
-                  />
-               </picture>
-              </div>
-              <div class="service__content">
-                <div class="service__content-item">
-                  <h3 class="service__title">Верстка сайтов</h3>
-                </div>
-                <div class="service__content-item">
-                  <p class="text">
-                    создаю HTML-документы и применяю к ним стили на CSS для получения привлекательного и удобного интерфейса вашего сайта
-                 </p>
-                </div>
-              </div>
-            </li>
-            <li class="service__item">
-              <div class="service__box">
-                <picture>
-                  <source
-                    media="(max-width: 541px)"
-                    srcset="./resurses/help3.1.png"/>
-                    <img
-                    class="service__image"
-                    src="./resurses/help_3.png"
-                    alt="адаптив"
-                    />
-                </picture>
-              <div class="service__content">
-                <div class="service__content-item">
-                  <h3 class="service__title">
-                  Разработка мобильного интерфейса
-                 </h3>
-                </div>
-                <div class="service__content-item">
-                  <p class="text">
-                    для получения динамического и ещё более удобного пользовательского интерфейса для сайта или приложения создаю интерактивные элементы с помощью Java Script 
-                  </p>
-                </div>
-               </div>
-            </li>
-           </ul> 
-         </div>
-        </section>
-     
-      <section id="contact" class="contact">
-        <div class="contact__wrapper">
-         
-          <div class="container">
-            <div class="contact__inner">
-              <div class="contact__inner_text">
-                <h2 class="contact__title">Для связи со мной заполните простую форму</h2>
-                <form class="order__form" action="/example/handler.php" >
-                <form class="order__form" action="/example/handler.php">
-                  <input class=" order__input" type="text" name="name" placeholder="Имя Фамилия ">
-                  <input class="order__input" type="email" name="email" placeholder="example@mail.com">
-                  <button class="popup__btn-form" type="submit">Отправить</button>
-                </form>
-               </div>
-               
-            </div>
-           </div>
-           <img class="contact__wrapper_bg" src="./resurses/программер1.1-svg.svg" alt="" />
-       </div>
-     </section>
-    </main>
-   
-    <footer>
-      <div class="footer__wrapper">
-        <div class="container">
-          <div class="footer__contact">
-               <h3 class="footer__text">
-              Портфолио фротнтенд-разработчика Ирины Кравцовой
-            </h3>
-            <ul class="footer__inner_contact">
-              <li>
-                <a class="footer__text" href="mailto:hello@mail.com">mail</a>
-               
-              </li>
-              <li>
-                <a class="footer__text" href="https://t.me/IrinaKavtsova" target="_blank">telegram</a>
-              </li>
-              <!-- <li>
-                <a class="footer__text" href="https://t.me/IrinaKavtsova" target="_blank">instagam</a>
-              </li> -->
+       <div class="hero__inner">
+          <div class="hero__wrapper">
+              <h1 class="hero__wrapper_text">
+               Я помогаю вам 
+                <span>повысить качество вашей жизни </span>
+              </h1>
+              <p class="text">
+                Я помогаю яснее увидеть,<br> точнее понять<br> и лучше осознать<br> привычные мысли, чувства, способы действия<br> и затем заменить то, что мешает, на то что помогает жить лучше.
+              </p>
               
-            </ul>
-           
+              <button class="hero__wrapper_button" href="#">Начать</button>
           </div>
-          <div class="footer__copyright">
-            <p class="footer__copyright_text">Все права защищены. 2023</p>
-            <p class="footer__copyright_text">политика обработки данных</p>
+            <div class="hero__image">
+               <img class="hero__image-foto" src="./resurses/фото5.svg" alt="foto" />
+            </div>
           </div>
         </div>
-  
-      </div>
+       </div>
+    </section>
+    <section class="services">
+      <div class="container">
+        <div class="services__inner">
+        <h2 class="title">Помогаю с запросами</h2>
      
-    </footer>
+      <ul class="services__wrapper">
+        <li class="service__item">
+          <img class="service__item-image" src="./resurses/выход из подавленности.svg" alt="">
+          <h3 class="servise__item-title">Тревожные и/или подавленные состояния</h3>
+          <p class="servise__item-text"></p>
+        </li>
+        <li class="service__item">
+          <img class="service__item-image" src="./resurses/горе-радость.svg" alt="">
+          <h3 class="servise__item-title">Работа с горем и травмой</h3>
+          <p class="servise__item-text"></p>
+        </li>
+        <li class="service__item">
+          <img class="service__item-image" src="./resurses/семья.jpg" alt="">
+          <h3 class="servise__item-title">Отношения в семье и социуме</h3>
+          <p class="servise__item-text"></p>
+        </li>
+        <li class="service__item">
+          <img class="service__item-image" src="./resurses/жизнь.svg" alt="">
+          <h3 class="servise__item-title">Симптомы, влияющие на жизнь</h3>
+          <p class="servise__item-text"></p>
+        </li>
+        <li class="service__item">
+          <img class="service__item-image" src="./resurses/танго в троем.svg" alt="">
+          <h3 class="servise__item-title">Созависимые отношения</h3>
+          <p class="servise__item-text"></p>
+        </li>
+        <li class="service__item">
+          <img class="service__item-image" src="./resurses/изменения.jpg" alt="">
+          <h3 class="servise__item-title">Переживание изменений</h3>
+          <p class="servise__item-text"></p>
+        </li>
+
+
+      </ul>
+      </div>
+    </div>
+     
+    </section>
+    <section class="about">
+      <div class="container">
+       <div class="about__inner">
+        <div class="about__image">
+          <img class="about__image-foto" src="./resurses/hero_fone.svg" alt="foto" />
+         </div>
+          <div class="about__wrapper">
+              <h2 class="title">
+               Обо мне    
+              </h2>
+              <div class="about__text">
+            
+              <p class="text">  Консультирую уже более 20 лет, кандидат психологических наук, применяю гештальт терапию и коучинг. Использую в работе только научно обоснованные методы и технологии. </p>
+              
+              <P class="text">Вижу целью свой работы - помочь повысить качество жизни человека, помочь справиться с тем, что делает жизнь хуже.</P>
+              <p class="text">Я помогаю яснее увидеть и точнее понять мысли, чувства, реакции, которые вызывают страдания или проблемы. А потом придумать как найти в себе силы поменять то, что мешает на то, что помогает жить лучше.</p>
+              <p class="text">Уверен, что поддержка и человеческое понимание очень важны на пути изменений, поэтому много уделяю времени и внимания созданию помогающих отношений с клиентом.</p>
+                  
+            </div>
+              <button class="about__wrapper_button" href="#">Узнайте больше</button>
+          </div>
+            
+          </div>
+        </div>
+       </div>
+    </section>
+   </main>
 
   
-    <script src="./js/gallery.js"></script>
-    <script src="./js/popup.js"></script>
-    <script src="./js/burger.js"></script>
-
-  </body>
+</body>
 </html>
