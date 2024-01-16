@@ -3,9 +3,10 @@
 }
 .hero__inner {
   display: flex;
+  gap: 20px;
 }
 .hero__wrapper {
-  margin-top: 105px;
+  padding-top: 26px;
   width: 50%;
 }
 .hero__wrapper_title {
@@ -33,7 +34,7 @@
   margin-bottom: 50px;
   font-family: Montserrat;
   font-size: 16px;
-   line-height: 24px; /* 150% */
+  line-height: 24px; /* 150% */
   letter-spacing: 0.64px;
   color: #fff;
 }
@@ -59,19 +60,14 @@ svg {
 .hero__image {
   position: relative;
   background-image: url(../resurses/fone1.png);
- /* background-size: 100%; */
- width: 728px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  max-width: 728px;
   height: 685px;
-  padding-left: 16px;
 }
-.header-img-fon {
-  
-}
+
 .hero__image-foto {
-  /* position: absolute; */
-  left: 311px;
-  top: 0px;
-  /* max-height: 750px; */
   width: 100%;
 }
 .header__mask-img-foto1 {
@@ -81,41 +77,65 @@ svg {
   height: 900px;
 }
 
-
 @media (max-width: 961px) {
+  .hero {
+    margin-bottom: 100px;
+  }
+
+  .hero__wrapper_title {
+    margin-bottom: 14px;
+    font-size: 44px;
+    letter-spacing: 0.3px;
+  }
+  .hero__wrapper_subtitle {
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 128.6%;
+    letter-spacing: 0.3px;
+  }
   .hero__wrapper_text {
-       font-size: 40px;
-      line-height: 47px;
+    font-size: 18px;
+    line-height: 24px;
     letter-spacing: -1.2px;
-   
+  }
+  .hero__image {
+    height: 550px;
   }
   .hero__image-foto {
-      left: 234px;
-    top: 32px;
-    height: 690px;
+    height: 500px;
   }
 }
-
-
 
 @media (max-width: 541px) {
   .hero {
     margin-bottom: 100px;
   }
   .hero__wrapper {
-    margin-top: 50px;
-  
+    padding-top: 0;
+    width: 100%;
   }
 
-  .hero__wrapper_text {
-       font-size: 32px;
-      line-height: 39px;
-    letter-spacing: -0.6px;
-   
+  .hero__wrapper_title {
+    margin-bottom: 14px;
+    font-size: 34px;
+    letter-spacing: 0.3px;
   }
+  .hero__wrapper_subtitle {
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 128.6%;
+    letter-spacing: 0.3px;
+  }
+  .hero__wrapper_text {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -1.2px;
+  }
+  .hero__image {
+    display: none;
+  }
+
   .hero__image-foto {
-      left: 77px;
-    top: 32px;
-    height: 690px;
+    height: 200px;
   }
 }

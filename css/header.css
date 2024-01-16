@@ -1,6 +1,5 @@
 .header {
- margin: 30px 0 0 0;
-
+  margin: 30px 0 50px 0;
 }
 .body_fixed {
   overflow: hidden;
@@ -10,15 +9,14 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
- 
 }
 .header__logo {
   display: flex;
   align-items: center;
 }
 .header__logo-link {
- width: 100px;
- height: 63px;
+  width: 100px;
+  height: 63px;
 }
 .logo {
   width: 100%;
@@ -31,19 +29,19 @@
 .logo__title {
   font-family: Montserrat;
   font-size: 10px;
-   line-height: 12px; /* 150% */
+  line-height: 12px; /* 150% */
   letter-spacing: 0.64px;
   color: #fde047;
 }
 .nav__list {
   display: flex;
-   gap: 60px;
+  gap: 60px;
 }
 .nav__item {
   display: block;
 }
 .nav__link {
-   font-size: 18px;
+  font-size: 18px;
   line-height: normal;
   letter-spacing: -0.54px;
   text-decoration: none;
@@ -57,12 +55,12 @@
 }
 .burger-btn {
   position: absolute;
-     top: 0px;
-   right: 0px;
-      z-index: 2000;
- }
+  top: 0px;
+  right: 0px;
+  z-index: 2000;
+}
 
- .burger {
+.burger {
   position: fixed;
   top: 0;
   left: 0;
@@ -78,7 +76,7 @@
 }
 .burger_open {
   opacity: 1;
-  visibility: visible;  
+  visibility: visible;
 }
 .burger__content {
   display: flex;
@@ -98,16 +96,15 @@
   transform: translateX(0);
 }
 
- @media (max-width: 961px) {
+@media (max-width: 961px) {
   .nav__list {
     display: none;
   }
   .logo-burger {
     width: 156px;
-   
   }
   .burger-btn {
-     display: flex;
+    display: flex;
     justify-content: center;
     flex-direction: column;
     width: 63px;
@@ -134,7 +131,7 @@
     width: 25px;
     height: 25px;
     background-size: 100%;
-    background-image: url(/resurses/крестик1-svg.png);
+    background-image: url(../resurses/крестик1-svg.png);
     background-size: cover;
     color: #fde047;
     background-position: center;
@@ -143,24 +140,20 @@
   .burger-btn_open .burger_line {
     display: none;
   }
-  .header__logo {
-    
-  }
   .burger-nav {
     margin-top: 70px;
-      margin-bottom: 70px;
+    margin-bottom: 70px;
   }
   .burger-nav__link {
- display: block;
-padding-bottom: 21px;
-font-family: IBM Plex Mono;
-font-size: 25px;
-font-style: normal;
-font-weight: 400;
-line-height: 33px;
-letter-spacing: -0.75px;
-text-transform: uppercase;
-
+    display: block;
+    padding-bottom: 21px;
+    font-family: IBM Plex Mono;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: -0.75px;
+    text-transform: uppercase;
   }
   .burger__contact-title {
     font-size: 16px;
@@ -183,13 +176,12 @@ text-transform: uppercase;
     color: #fde047;
     text-decoration: none;
   }
- 
 }
 
 @media (max-width: 541px) {
   .header {
     margin-top: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
   }
   .logo-img {
     width: 96px;
@@ -202,9 +194,4 @@ text-transform: uppercase;
     width: 20px;
     height: 2px;
   }
- 
 }
-
-
-
- 

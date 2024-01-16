@@ -70,6 +70,7 @@ margin-bottom: 66px;
   .footer__contact {
     margin-bottom: 40px;
     gap: 22px;
+    flex-direction: column;
        }
   .footer__text {
     font-size: 15px;
