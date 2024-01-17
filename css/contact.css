@@ -3,28 +3,45 @@
 }
 .contact__wrapper {
   background-color: #222a43;
-  background-image: url(../resurses/программер1.1-svg.svg);
+  position: relative;
+  /* background-image: url(../resurses/программер1.1-svg.svg);
   background-repeat: no-repeat;
   background-size: 50% 100%;
-  background-position: right;
+  background-position: right; */
   border-radius: 30px;
 }
+ .contact__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 50%;
+  height: 100%;
+  z-index: 1000;
+  display: block;
+  background-size: contain;
+  background-image: url(../resurses/программер1.1-svg.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+   border-radius: 30px;
+
+} 
 .contact__inner {
+  padding: 100px 20px 100px 0px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 20px;
-  width: calc(50% - 10px);
+  width: 50%;
 }
-.contact__wrapper_bg {
-  object-fit: cover;
-  max-width: 975px;
-}
-.contact__inner_text {
-  padding: 100px 0 100px 0px;
+
+/* .contact__inner_text {
+  
+  width: 50%;
   position: relative;
   display: flex;
   flex-direction: column;
-}
+  align-items: center;
+} */
 
 .contact__title {
   padding-bottom: 60px;
@@ -81,12 +98,18 @@
   .contact {
     margin-bottom: 7px;
   }
-  .contact__wrapper {
+  /* .contact__wrapper {
     background-size: 50%;
-  }
-  .contact__inner_text {
+  } */
+  /* .contact__wrapper::before {
+    /* background-size: 50%;
+  }  */
+  /* .contact__inner_text {
     padding: 50px 0 86px 50px;
-  }
+  } */
+  .contact__inner {
+    padding: 50px 20px 86px 50px;
+    }
   .contact__title {
     padding-bottom: 40px;
     font-size: 40px;
@@ -113,15 +136,17 @@
 @media (max-width: 541px) {
   .contact__wrapper {
     margin-bottom: 0;
+    /* background-image: none;
+    background-size: 0; */
+  }
+  .contact__wrapper::before {
+    display: none;
     background-image: none;
     background-size: 0;
   }
   .contact__inner {
-    width: 100%;
-  }
-  .contact__inner_text {
     padding: 50px 0 52px 3px;
-    max-width: 100%;
+    width: 100%;
   }
   .contact__title {
     font-size: 28px;
