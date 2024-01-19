@@ -1,18 +1,42 @@
 .hero {
   margin-bottom: 150px;
+
 }
 .hero__inner {
-  display: flex;
-  gap: 20px;
-}
+  position: relative;
+  background-image: url(../resurses/fone1.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size:contain;
+  background-position: 50%;
+  background-size: 50% ;
+  background-position-y: 25px; 
+  background-position-x: right;
+  }
+ .hero__inner::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 50%;
+  height: 100%;
+  z-index: 1000;
+  display: block;
+  background-size: contain;
+  background-image: url(../resurses/программер2.svg);
+  background-repeat: no-repeat;
+ background-position: unset;
+ }
 .hero__wrapper {
-  padding-top: 26px;
+  padding-top: 66px;
+  padding-right: 16px;
+  padding-bottom: 48px;
   width: 50%;
 }
 .hero__wrapper_title {
   margin-bottom: 24px;
   font-family: Montserrat;
-  font-size: 56px;
+  font-size: 46px;
   font-style: normal;
   font-weight: 600;
   line-height: 128.6%;
@@ -22,7 +46,7 @@
 .hero__wrapper_subtitle {
   margin-bottom: 20px;
   font-family: Montserrat;
-  font-size: 36px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 600;
   line-height: 128.6%;
@@ -31,65 +55,43 @@
 }
 
 .hero__wrapper_text {
-  margin-bottom: 50px;
-  font-family: Montserrat;
+  margin-bottom: 65px;
+  /* font-family: Montserrat; */
   font-size: 16px;
-  line-height: 24px; /* 150% */
+  line-height: 150%; 
   letter-spacing: 0.64px;
   color: #fff;
 }
-.hero__wrapper_mask-button {
-  width: 194px;
-  height: 60px;
-  background: #fcdf4a;
-  display: flex;
-}
 .hero__wrapper_button {
-  margin-top: 18px;
   margin-left: 18px;
-  font-family: Montserrat;
+  padding: 15px 20px 15px 20px;
+  /* font-family: Montserrat; */
   font-size: 16px;
-  line-height: 24px; /* 150% */
+  line-height: 150%;
   letter-spacing: 0.3px;
   color: #000;
   text-decoration: none;
-}
-svg {
-  margin: auto;
-}
-.hero__image {
-  position: relative;
-  background-image: url(../resurses/fone1.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 50%;
-  max-width: 728px;
-  height: 685px;
+  background: #fcdf4a;
 }
 
-.hero__image-foto {
-  width: 100%;
-}
-.header__mask-img-foto1 {
-  position: absolute;
-  left: 120px;
-  top: 0px;
-  height: 900px;
-}
 
 @media (max-width: 961px) {
   .hero {
     margin-bottom: 100px;
   }
+  .hero__wrapper {
+    padding-top: 25px;
+    padding-bottom: 0;
+  }
 
   .hero__wrapper_title {
     margin-bottom: 14px;
-    font-size: 44px;
+    font-size: 36px;
     letter-spacing: 0.3px;
   }
   .hero__wrapper_subtitle {
     margin-bottom: 20px;
-    font-size: 26px;
+    font-size: 22px;
     line-height: 128.6%;
     letter-spacing: 0.3px;
   }
@@ -109,6 +111,13 @@ svg {
 @media (max-width: 541px) {
   .hero {
     margin-bottom: 100px;
+  }
+  .hero__inner {
+    background-image: none;
+  }
+  .hero__inner::before {
+    background-image: none;
+   
   }
   .hero__wrapper {
     padding-top: 0;

@@ -27,7 +27,7 @@
   padding-left: 15px;
 }
 .logo__title {
-  font-family: Montserrat;
+  /* font-family: Montserrat; */
   font-size: 10px;
   line-height: 12px; /* 150% */
   letter-spacing: 0.64px;
