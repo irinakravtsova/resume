@@ -107,18 +107,30 @@
     height: 500px;
   }
 }
-
-@media (max-width: 541px) {
-  .hero {
-    margin-bottom: 100px;
-  }
+@media (max-width: 800px) {
   .hero__inner {
     background-image: none;
   }
   .hero__inner::before {
     background-image: none;
-   
+     }
+     .hero__wrapper {
+      
+      width: 100%;
+    }
+}
+
+@media (max-width: 541px) {
+  .hero {
+    margin-bottom: 100px;
   }
+  /* .hero__inner {
+    background-image: none;
+  }
+  .hero__inner::before {
+    background-image: none;
+   
+  } */
   .hero__wrapper {
     padding-top: 0;
     width: 100%;
