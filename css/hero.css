@@ -28,6 +28,7 @@
  background-position: unset;
  }
 .hero__wrapper {
+  /* display: flex; */
   padding-top: 66px;
   padding-right: 16px;
   padding-bottom: 48px;
