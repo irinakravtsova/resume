@@ -34,7 +34,7 @@
   padding-bottom: 48px;
   width: 50%;
 }
-.hero__wrapper_title {
+.hero__wrapper__title {
   margin-bottom: 24px;
   font-family: Montserrat;
   font-size: 46px;
@@ -44,7 +44,7 @@
   letter-spacing: 0.3px;
   color: #fcdf4a;
 }
-.hero__wrapper_subtitle {
+.hero__wrapper__subtitle {
   margin-bottom: 20px;
   font-family: Montserrat;
   font-size: 32px;
@@ -55,7 +55,7 @@
   color: #fcdf4a;
 }
 
-.hero__wrapper_text {
+.hero__wrapper__text {
   margin-bottom: 65px;
   /* font-family: Montserrat; */
   font-size: 16px;
@@ -63,8 +63,9 @@
   letter-spacing: 0.64px;
   color: #fff;
 }
-.hero__wrapper_button {
+.hero__wrapper__button {
   margin-left: 18px;
+  display: inline-block;
   padding: 15px 20px 15px 20px;
   /* font-family: Montserrat; */
   font-size: 16px;
@@ -85,28 +86,23 @@
     padding-bottom: 0;
   }
 
-  .hero__wrapper_title {
+  .hero__wrapper__title {
     margin-bottom: 14px;
     font-size: 36px;
     letter-spacing: 0.3px;
   }
-  .hero__wrapper_subtitle {
+  .hero__wrapper__subtitle {
     margin-bottom: 20px;
     font-size: 22px;
     line-height: 128.6%;
     letter-spacing: 0.3px;
   }
-  .hero__wrapper_text {
+  .hero__wrapper__text {
     font-size: 18px;
     line-height: 24px;
     letter-spacing: -1.2px;
   }
-  .hero__image {
-    height: 550px;
-  }
-  .hero__image-foto {
-    height: 500px;
-  }
+
 }
 @media (max-width: 800px) {
   .hero__inner {
@@ -125,39 +121,27 @@
   .hero {
     margin-bottom: 100px;
   }
-  /* .hero__inner {
-    background-image: none;
-  }
-  .hero__inner::before {
-    background-image: none;
-   
-  } */
+
   .hero__wrapper {
     padding-top: 0;
     width: 100%;
   }
 
-  .hero__wrapper_title {
+  .hero__wrapper__title {
     margin-bottom: 14px;
     font-size: 34px;
     letter-spacing: 0.3px;
   }
-  .hero__wrapper_subtitle {
+  .hero__wrapper__subtitle {
     margin-bottom: 20px;
     font-size: 26px;
     line-height: 128.6%;
     letter-spacing: 0.3px;
   }
-  .hero__wrapper_text {
+  .hero__wrapper__text {
     font-size: 18px;
     line-height: 24px;
     letter-spacing: -1.2px;
   }
-  .hero__image {
-    display: none;
-  }
 
-  .hero__image-foto {
-    height: 200px;
-  }
 }
