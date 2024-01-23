@@ -18,7 +18,7 @@ color: #FFF;
 .service__box {
   height: 200px;
  }
-.service__image {
+.service-image {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -33,7 +33,7 @@ color: #FFF;
    border-radius: 30px;
   background: #222a43;
 }
-.service__content__item {
+.service__content-item {
   width: calc(50% - 10.5px);
 }
 
@@ -59,7 +59,7 @@ color: #FFF;
 .service__box {
   height: 162px;
 }
-.service__image {
+.service-image {
   border-radius: 24px;
 }
 .service__content {
@@ -92,7 +92,7 @@ color: #FFF;
 .service__box {
   height: 225px;
 }
-.service__image {
+.service-image {
   border-radius: 24px;
 }
 .service__content {
@@ -100,7 +100,7 @@ color: #FFF;
    gap: 15px;
     padding: 30px 34px 30px 21px;
  }
- .service__content__item {
+ .service__content-item {
   width: 100%;
 }
 .service__title {
